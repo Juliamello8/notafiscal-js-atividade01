@@ -1,4 +1,12 @@
-let NotaFiscal = class NotaFiscal extends Product {
+let NotaFiscal = class NotaFiscal {
+    #num
+    #date
+    #key
+    #emitterCNPJ
+    #emitterName
+    #documentClient
+    #nameClient
+
 
     constructor(num, date, key, emitterCNPJ, emitterName, documentClient, nameClient) {
         this.#num = num;
@@ -8,11 +16,12 @@ let NotaFiscal = class NotaFiscal extends Product {
         this.#emitterName = emitterName;
         this.#documentClient = documentClient;
         this.#nameClient = nameClient;
-        this.listProducts = products;
     }
 
-    get nota() {
-        return this.#id;
+    get notaByNum() {
+        return (
+            this.#num
+        );
     }
 
 }

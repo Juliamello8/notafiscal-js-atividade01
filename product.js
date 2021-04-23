@@ -14,40 +14,10 @@ let Product = class Product {
     }
 
     get productById() {
-        return this.#id;
+        return (
+            this.#id
+        )
+
     }
 
 }
-
-let products = new Product(
-    {
-        id: 001,
-        name: 'Abacaxi',
-        description: 'Fruta',
-        quantity: 10,
-        value: 1,
-    },
-    {
-        id: 002,
-        name: 'DVD',
-        description: 'Filme',
-        quantity: 1,
-        value: 51,
-    },
-    {
-        id: 001,
-        name: 'Copo de vidro',
-        description: 'Utensilios',
-        quantity: 10,
-        value: 6,
-    },
-    {
-        id: 001,
-        name: 'Mamão',
-        description: 'Fruta',
-        quantity: 3,
-        value: 4,
-    }
-);
-
-console.log(products);
